@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -10,28 +11,37 @@
 {
     text-align: center;
 }
-/* Create three equal columns that floats next to each other */
+
 .column {
   float: left;
-  padding: 10px;
-  height: 600px; /* Should be removed. Only for demonstration */
+  
+  height: 630px; 
  border: 1px solid rgba(0, 0, 0, .1);
 
 }
 .one
 {
-    width: 25%;
+    width: 24%;
     
 }
+.two
+{
+    width:37%;
+}
+.three
+{
+    width: 35%;;
+}
+
 .pic{
     text-align: center;
     margin: 20px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 .profilepic{
     vertical-align: middle;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   border: 1px solid black;
   padding: 10px;
@@ -49,12 +59,37 @@
 {
   display: flex;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
 }
 .detail
 {
   opacity: 0.5;
+}
+.btn{
+
+  border-radius: 20px;
+  text-align: center;
+
+  justify-content: space-around;
+
+}
+.button
+{
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 8px;
+  height: 27px;
+  padding: 10px;
+  vertical-align: baseline;
+}
+.button:hover{
+  opacity: 0.7;
+}
+.upload{
+  background-color: blue
+  ;
+  color: white;
 }
 .part-one
 {
@@ -62,20 +97,13 @@
 }
 
 
-.two
-{
-    width:37.5%
-}
-.three
-{
-    width: 37.5%;
-}
 
 
 .row{
     padding: 20px;
     background-color:whitesmoke
     ;
+    margin: 0px;
 }
 .row h2{
     opacity: 0.5;
@@ -83,17 +111,31 @@
 
 }
 
-/* Clear floats after the columns */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
   }
+}
+hr{
+  opacity: 0.5;
+}
+.quote {
+  text-align: center;
+}
+.quote p{
+  opacity: 0.6;
+}
+.icon{
+  text-align: center;
+  color:blue;
+  padding: 10px;
 }
 </style>
 </head>
@@ -126,15 +168,32 @@
           </div>
 
         </div>
+        <div class="btn">
+    
+          <input  class="button upload"  type="button" value="Upload New Avatar" onclick="msg()"><br>
+          <input class="button delete" type="button" value="Delete" onclick="msg()">
+        </div>
+        <hr>
+
+        <div class="quote">
+          Your Slogan <br>
+          <p>(Just Start typing To edit)</p>
+          <br>
+          <p>Everthing we hear is an opinion,<br>not a fact .Everthing we see is a <br>
+          perspective, not the truth</p>
+        </div>
+        <div class="icon">
+        <i class=" fa-solid fa-quote-left"></i>
+      </div>
    
   </div>
-  <div class="column two" style="background-color:white;">
+  <div class="column two" style="background-color:white;" >
     <h2>Column 2</h2>
-    <p>Some text..</p>
+  
   </div>
   <div class="column three" style="background-color:white;">
     <h2>Column 3</h2>
-    <p>Some text..</p>
+   
   </div>
 </div>
 
