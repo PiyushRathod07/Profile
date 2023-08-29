@@ -6,6 +6,7 @@
 <style>
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 .name
 {
@@ -15,7 +16,7 @@
 .column {
   float: left;
   
-  height: 630px; 
+  height: 640px; 
  border: 1px solid rgba(0, 0, 0, .1);
 
 }
@@ -36,7 +37,7 @@
 .pic{
     text-align: center;
     margin: 20px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 .profilepic{
     vertical-align: middle;
@@ -72,6 +73,7 @@
   text-align: center;
 
   justify-content: space-around;
+  
 
 }
 .button
@@ -81,7 +83,8 @@
   margin: 8px;
   height: 27px;
   padding: 10px;
-  vertical-align: baseline;
+ 
+ 
 }
 .button:hover{
   opacity: 0.7;
@@ -137,6 +140,33 @@ hr{
   color:blue;
   padding: 10px;
 }
+.edit{
+  font-size: large;
+  opacity: 0.6;
+  padding-left: 20px;
+
+}
+.info{
+ 
+  text-align: center;
+  padding: 10px;
+  
+}
+label{
+ display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+.info input{
+ width: 70%;
+ padding: 10px;
+ justify-content: space-between;
+ margin: 15px;
+ border: 1px solid black;
+ border-radius: 16px;
+
+}
+
 </style>
 </head>
 <body>
@@ -188,11 +218,42 @@ hr{
    
   </div>
   <div class="column two" style="background-color:white;" >
-    <h2>Column 2</h2>
+   
+    <p class="edit">Edit Your Personal Settings </p>
+    <hr>
+    
+    <div class="info">
+    <form action="">
+      <label for="fname">Full Name</label>
+      <input type="text" id="fname"  value="Danielle Rogers ">
+      <br>
+
+      <label for="title">Title</label>
+      <input type="text"  id="title"  placeholder="Enter Your title here" >
+<br>
+      <label for="email">Email</label>
+      <input type="email" id="mail"  placeholder="Enter Your email here">
+
+
+    <hr>
+    <label for="bday">birthday</label><br>
+    <select name="birthday" id="dateinfo">
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+    </select>
+    </form>
+  </div>
+  
   
   </div>
   <div class="column three" style="background-color:white;">
-    <h2>Column 3</h2>
+    <p class="edit">Your Externals Links</p>
+    <hr>
+    <form action="">
+      
+    </form>
    
   </div>
 </div>
