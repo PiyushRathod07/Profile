@@ -152,7 +152,7 @@ hr{
   padding: 10px;
   
 }
-label{
+ .info label{
  display: inline-block;
   width: 90px;
   text-align: right;
@@ -164,8 +164,46 @@ label{
  margin: 15px;
  border: 1px solid black;
  border-radius: 16px;
+ opacity: 0.5;
 
 }
+.bday
+{
+  margin: 15px;
+
+}
+.birthday{
+  padding: 8px;
+  border-radius: 15px;
+  opacity: 0.5;
+  margin: 8px;
+}
+.place{
+
+  display: flex;
+ 
+
+
+}
+.place select{
+  margin: 50px 50px;
+}
+  
+
+
+.place input{
+  
+ padding: 10px;
+ justify-content: space-between;
+ margin: 15px;
+ border: 1px solid black;
+ border-radius: 16px;
+ opacity: 0.5;
+
+
+}
+
+
 
 </style>
 </head>
@@ -236,13 +274,39 @@ label{
 
 
     <hr>
-    <label for="bday">birthday</label><br>
-    <select name="birthday" id="dateinfo">
+    <label class="bday" for="bday">Birthday</label><br>
+    <select class="birthday" id="day">
       <option value="01">01</option>
       <option value="02">02</option>
       <option value="03">03</option>
       <option value="04">04</option>
     </select>
+    <select class="birthday" id="month">
+      <option value="December">December</option>
+      <option value="january">january</option>
+      <option value="February">February</option>
+      <option value="March">March</option>
+    </select>
+    <select class="birthday" id="year">
+      <option value="1984">1984</option>
+      <option value="1985">1985</option>
+      <option value="1986">1986</option>
+      <option value="1987">1987</option>
+    </select>
+
+   
+    <hr>
+    <div class="place">
+    <label class="Country" placeholder="Not Chosen">Country</label>
+    <select   >
+      <option value="India">India</option>
+      <option value="Japan">Japan</option>
+      <option value="Rusia">Rusia</option>
+      <option value="Africa">Africa</option>
+    </select>
+    <label class="Country" aria-placeholder="Not Chosen">State/Province/Region</label>
+    <input  type="text" placeholder="Type here">
+  </div>
     </form>
   </div>
   
