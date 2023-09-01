@@ -4,19 +4,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <style>
+   @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+	font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
-.name
-{
-    text-align: center;
-}
-
 .column {
-  float: left;
-  
-  height: 640px; 
+ float: left;  
+ height: 700px; 
  border: 1px solid rgba(0, 0, 0, .1);
 
 }
@@ -35,7 +31,6 @@
 }
 
 .pic{
-    text-align: center;
     margin: 20px;
     padding-top: 30px;
 }
@@ -48,10 +43,7 @@
   padding: 10px;
   
 }
-.username
-{
-  text-align: center;
-}
+
 .type
 {
   opacity: 0.6;
@@ -60,52 +52,34 @@
 {
   display: flex;
   justify-content: space-around;
-  font-size: 15px;
-  text-align: center;
 }
 .detail
 {
   opacity: 0.5;
 }
-.btn{
-
-  border-radius: 20px;
-  text-align: center;
-
-  justify-content: space-around;
-  
-
-}
-.button
-{
-  border: 1px solid black;
-  border-radius: 10px;
+.button,.button-1{
+  border-radius: 24px;
   margin: 8px;
-  height: 27px;
-  padding: 10px;
- 
- 
+  padding: 7px 20px;
+  border-style: none;
+  background-color: #0E86D4;
+  color: white;
+}
+.button-1{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
 }
 .button:hover{
   opacity: 0.7;
-}
-.upload{
-  background-color: blue
-  ;
-  color: white;
 }
 .part-one
 {
   border-right: 1px solid rgba(rgb(0, 0, 0), 0, 0, 0.6);
 }
-
-
-
-
 .row{
     padding: 20px;
-    background-color:whitesmoke
-    ;
+    background-color:whitesmoke;
     margin: 0px;
 }
 .row h2{
@@ -129,14 +103,10 @@
 hr{
   opacity: 0.5;
 }
-.quote {
-  text-align: center;
-}
 .quote p{
   opacity: 0.6;
 }
 .icon{
-  text-align: center;
   color:blue;
   padding: 10px;
 }
@@ -144,63 +114,75 @@ hr{
   font-size: large;
   opacity: 0.6;
   padding-left: 20px;
+  text-align: left;
 
 }
 .info{
- 
-  text-align: center;
-  padding: 10px;
+
+  text-align: left;
   
+}
+.info input[type="text"],.info input[type="email"],.place input[type="text"]{
+  text-align: left;
+  padding-left:10px ;
 }
  .info label{
  display: inline-block;
   width: 90px;
   text-align: right;
 }
-.info input{
+.info input,.place-input{
  width: 70%;
  padding: 10px;
- justify-content: space-between;
  margin: 15px;
  border: 1px solid black;
- border-radius: 16px;
+ border-radius: 24px;
  opacity: 0.5;
 
 }
 .bday
 {
-  margin: 15px;
+  margin: 10px;
+  text-align: left;
 
 }
 .birthday{
-  padding: 8px;
+  text-align: left;
+  padding: 5px 25px;
   border-radius: 15px;
   opacity: 0.5;
   margin: 8px;
 }
-.place{
+.place label{
 
-  display: flex;
+display: inline;
+align-items: left;
+padding: 10px 60px;
+margin-bottom: 30px;
+
+}
+.place .place-input {
+
+  padding: 7px 7px;
+  width: 42%;
+  justify-content: left;
+
+} 
+
+.link{
+ padding: 20px 20px;
+
  
-
-
 }
-.place select{
-  margin: 50px 50px;
+.link input{
+  border-radius: 15px ;
+  margin: 10px;
+  width: 95%;
+  opacity: 0.5;
+  padding: 5px;
 }
-  
-
-
-.place input{
-  
- padding: 10px;
- justify-content: space-between;
- margin: 15px;
- border: 1px solid black;
- border-radius: 16px;
- opacity: 0.5;
-
-
+.link label{
+  justify-content: left;
 }
 
 
@@ -236,17 +218,17 @@ hr{
           </div>
 
         </div>
-        <div class="btn">
+       
     
           <input  class="button upload"  type="button" value="Upload New Avatar" onclick="msg()"><br>
           <input class="button delete" type="button" value="Delete" onclick="msg()">
-        </div>
+        
         <hr>
 
         <div class="quote">
           Your Slogan <br>
           <p>(Just Start typing To edit)</p>
-          <br>
+          
           <p>Everthing we hear is an opinion,<br>not a fact .Everthing we see is a <br>
           perspective, not the truth</p>
         </div>
@@ -263,14 +245,14 @@ hr{
     <div class="info">
     <form action="">
       <label for="fname">Full Name</label>
-      <input type="text" id="fname"  value="Danielle Rogers ">
+      <input type="text" value="Danielle Rogers ">
       <br>
 
       <label for="title">Title</label>
-      <input type="text"  id="title"  placeholder="Enter Your title here" >
+      <input type="text" placeholder="Enter Your title here" >
 <br>
       <label for="email">Email</label>
-      <input type="email" id="mail"  placeholder="Enter Your email here">
+      <input type="email"   placeholder="Enter Your email here">
 
 
     <hr>
@@ -296,17 +278,28 @@ hr{
 
    
     <hr>
-    <div class="place">
-    <label class="Country" placeholder="Not Chosen">Country</label>
-    <select   >
-      <option value="India">India</option>
-      <option value="Japan">Japan</option>
-      <option value="Rusia">Rusia</option>
-      <option value="Africa">Africa</option>
-    </select>
-    <label class="Country" aria-placeholder="Not Chosen">State/Province/Region</label>
-    <input  type="text" placeholder="Type here">
+    <div class="place"> 
+      <label for="country">Country</label>
+      <label for="">State/Province/Region</label><br>
+      <select name="country" class="place-input">
+        <option value="India">Not Chosen</option>
+        <option value="India">India</option>
+        <option value="Japan">Japan</option>
+        <option value="Rusia">Rusia</option>
+        <option value="Africa">Africa</option>
+        </select>
+      <input type="text" class="place-input" placeholder="Type here"></div>
+  <hr>
+  
+  <div class="place"> 
+    <label for="country">Postal Code</label>
+    <label for="">Phone Number</label><br>
+    <input type="text" class="place-input" placeholder="Type here">
+    <input type="text" class="place-input" placeholder="Type here">
   </div>
+  <hr><div class="checkbox">
+  <input type="checkbox" ><label for=""> i agree to receive notification email from hive</label>
+</div>
     </form>
   </div>
   
@@ -315,10 +308,23 @@ hr{
   <div class="column three" style="background-color:white;">
     <p class="edit">Your Externals Links</p>
     <hr>
+    <div class="link">
     <form action="">
+      <label for="">Facebook URL:</label><br>
+      <input type="text" placeholder="Paste your link here"><br>
+      <label for="">Twitter URL:</label><br>
+      <input type="text" placeholder="Paste your link here"><br>
+      <label for="">Blogger URL:</label><br>
+      <input type="text" placeholder="Paste your link here"><br>
+      <label for="">Google+ URL:</label><br>
+      <input type="text" placeholder="Paste your link here"><br>
+      <label for="">LinkedIn URL:</label><br>
+      <input type="text" placeholder="Paste your link here"><br>
+      <label for="">Website URL:</label><br>
+      <input type="text" placeholder="Paste your link here"><br>
       
     </form>
-   
+  </div>
   </div>
 </div>
 
