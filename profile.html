@@ -189,6 +189,7 @@ margin-bottom: 30px;
   width: 95%;
   opacity: 0.5;
   padding: 5px;
+  text-align: left;
 }
 .link label{
   float: left;
@@ -214,11 +215,45 @@ margin-bottom: 30px;
   margin: 40px ;
 }
 .example{
-  text-align: right;
-  border-radius: 10px;
-  margin-right: 150px;
-}
 
+  margin-right: 20px;
+  float: right;
+  display: flex;
+}
+header{
+  height: 50px;
+ 
+}
+.search{
+border: 1px solid black;
+border-radius: 24px;
+padding: 7px;
+
+}
+.search input {
+  border: none;
+  text-align: left;
+  padding-right: 30px;
+  
+}
+.search i{
+
+  border: none;
+  text-align: left;
+
+  
+}
+.imgg img{
+  height: 40px;
+  width: 40px;
+  float: right;
+margin: 0px 20px;
+
+border-radius: 50%;
+}
+.user{
+  border: none;
+}
 
 
 
@@ -229,9 +264,21 @@ margin-bottom: 30px;
 
 <header>
   <form class="example" action="action_page.php">
+    <div class="search"><span><i class="fa fa-search"></i></span>
     <input  type="text" placeholder="Search.." name="search">
-    <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="imgg">
+      <img   src="pic.jpg" alt="profile pic ">
+      
+    </div>
+    <select class="user" name="name">
+      <option value="Danielle">Danielle</option>
+      <option value="user 1">user 1</option>
+      <option value="user 2">user 2</option>
+      <option value="user 3">user 4</option>
+      </select>
   </form>
+ 
 </header>
 
 <div class="row">
